@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Pedidos - Matsuri Delivery</title>
+    <link rel="stylesheet" href="pedidos.css">
+
+    <script src="https://kit.fontawesome.com/0380407b19.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo_header">
+            <a href="index.html"><img src="img/escuro/Inserir_um_título_2_-removebg-preview 1 (1).png" id="logo" alt="Logo"></a>
+        </div>
+        <div id="outros_header">
+            <label class="checkbox-custom" for="tema">
+                <input type="checkbox" class="troca-tema" id="tema" onclick="trocaDeTema()">
+                <span class="icone" id="unchecked"><i class="fa-solid fa-sun"></i></span>
+                <span class="icone" id="checked"><i class="fa-solid fa-moon"></i></span>
+            </label>
+            <a href="produtos.html" class="link-header">Produtos</a>
+            <a href="pedidos.html" class="link-header">Meus Pedidos</a>
+            <a href="perfil.html" class="link-header">Perfil</a>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+        <h2>O Japão Mais Perto de Você</h2>
+        <h3>Acompanhe o status dos seus pedidos em tempo real.</h3>
+    </section>
+
+    <main id="area-pedidos">
+     <div class="topo-pedidos">
+            <h2>MEUS PEDIDOS</h2>
+            <div class="controles-topo">
+                <a href="produtos_login.html" class="btn-voltar-produtos"><i class="fa-solid fa-arrow-left"></i> Voltar para Produtos</a>
+                <input type="text" id="busca-pedido" placeholder="Buscar pedido ou prato..." onkeyup="filtrarPedidos()">
+            </div>
+        </div>
+
+        <div class="lista-pedidos" id="lista-pedidos">
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="redes_rodape">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div id="info_rodape">
+            <h5>Matsuri Delivery</h5>
+            <a href="index.html">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre o Matsuri</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Login</h5>
+            <a href="pedidos.html">Histórico</a>
+            <a href="produtos.html">Carrinho</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="login.html">Entrar</a>
+        </div>
+        <div id="info_rodape">
+            <h5>Contato</h5>
+            <a href="#">matsuri_delivery@gmail.com</a>
+            <a href="#">(31) 9 9999-9999</a>
+            <a href="#">R. matsuri 67 - Bairro Delivery</a>
+        </div>
+    </footer>
+
+   
+    <script src="script.js"></script>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>
